@@ -1,4 +1,3 @@
-version: "3.9"
 services:
   fossbilling:
     image: fossbilling/fossbilling:latest
