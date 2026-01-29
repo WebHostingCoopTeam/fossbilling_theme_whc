@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -eux
 docker compose up -d
-set +e
+set +x
 echo '
 login to http://localhost:5080/
 here are the database details
