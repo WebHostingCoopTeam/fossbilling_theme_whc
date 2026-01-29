@@ -24,8 +24,9 @@ Password: fossbilling
 Choose an admin user and password.  Then to run the commands the installer asks you to do these:
 
 ```
-docker exec fossbilling_theme_whc-fossbilling-1 rm -rfv /var/www/html/install
 docker exec fossbilling_theme_whc-fossbilling-1 ls /var/www/html/install
+docker exec fossbilling_theme_whc-fossbilling-1 rm -rfv /var/www/html/install
+docker exec fossbilling_theme_whc-fossbilling-1 ls /var/www/html
 docker exec fossbilling_theme_whc-fossbilling-1 chmod 644 /var/www/html/config.php
 docker exec fossbilling_theme_whc-fossbilling-1 ls -alh /var/www/html/config.php
 ```
