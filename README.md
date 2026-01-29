@@ -5,6 +5,14 @@ This is a docker-compose directory to help with theme development.
 
 ### Install
 
+First untar the themes directory:
+
+```
+tar zxvf themes.tgz
+```
+
+Then bring up the containers:
+
 ```
 docker compose up -d
 ```
@@ -60,3 +68,9 @@ or add it to your own cron:
 Want to try again with a full reset? Do this
 
 [full-reset.sh](./scripts/full-reset.sh)
+
+### Other scripts
+
+[exec.sh](./scripts/exec.sh) - exec a shell inside the fossbilling container
+
+[logs.sh](./scripts/logs.sh) - get logs form the fossbilling container
