@@ -9,6 +9,10 @@ This is a docker-compose directory to help with theme development.
 docker compose up -d
 ```
 
+or use the script:
+
+[up.sh](./scripts/up.sh)
+
 ```
 http://localhost:5080/
 ```
@@ -23,13 +27,7 @@ Password: fossbilling
 
 Choose an admin user and password.  Then to run the commands the installer asks you to do these:
 
-```
-docker exec fossbilling_theme_whc-fossbilling-1 ls /var/www/html/install
-docker exec fossbilling_theme_whc-fossbilling-1 rm -rfv /var/www/html/install
-docker exec fossbilling_theme_whc-fossbilling-1 ls /var/www/html
-docker exec fossbilling_theme_whc-fossbilling-1 chmod 644 /var/www/html/config.php
-docker exec fossbilling_theme_whc-fossbilling-1 ls -alh /var/www/html/config.php
-```
+[post-install.sh](./scripts/post-install.sh)
 
 Now you can login here:
 
@@ -41,9 +39,15 @@ http://localhost:5080/admin
 
 You can simulate the cronjob with a simple:
 
+
+
 ```
 docker exec fossbilling_theme_whc-fossbilling-1 php /var/www/html/cron.php
 ```
+
+or use the script:
+
+[cronjob.sh](./scripts/cronjob.sh)
 
 or add it to your own cron:
 
@@ -55,8 +59,4 @@ or add it to your own cron:
 
 Want to try again with a full reset? Do this
 
-```
-docker compose down
-docker volume rm fossbilling_theme_whc_mysql 
-docker volume rm fossbilling_theme_whc_fossbilling
-```
+[full-reset.sh](./scripts/full-reset.sh)
