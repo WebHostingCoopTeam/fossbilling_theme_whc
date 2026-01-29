@@ -37,6 +37,20 @@ Now you can login here:
 http://localhost:5080/admin
 ```
 
+### Cron
+
+You can simulate the cronjob with a simple:
+
+```
+docker exec fossbilling_theme_whc-fossbilling-1 php /var/www/html/cron.php
+```
+
+or add it to your own cron:
+
+```
+*/5 * * * * docker exec fossbilling_theme_whc-fossbilling-1 php /var/www/html/cron.php
+```
+
 ### Reset
 
 Want to try again with a full reset? Do this
