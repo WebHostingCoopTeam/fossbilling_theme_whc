@@ -11,6 +11,14 @@ First untar the themes directory:
 tar zxvf themes.tgz
 ```
 
+Now clone the themes into the theme directory:
+
+```
+cd themes
+git clone git@github.com:WebHostingCoopTeam/fb_whc_admin
+git clone git@github.com:WebHostingCoopTeam/fb_whc
+```
+
 Then bring up the containers:
 
 ```
