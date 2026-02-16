@@ -1,6 +1,7 @@
 services:
   fossbilling:
-    image: fossbilling/fossbilling:latest
+    image: webhostingcoop/fossbilling:latest
+    env_file: ".env"
     restart: always
     ports:
       - 5080:80
