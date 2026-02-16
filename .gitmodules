@@ -1,0 +1,6 @@
+[submodule "submodules/fb_whc"]
+	path = submodules/fb_whc
+	url = https://github.com/WebHostingCoopTeam/fb_whc
+[submodule "submodules/fb_whc_admin"]
+	path = submodules/fb_whc_admin
+	url = https://github.com/WebHostingCoopTeam/fb_whc_admin
