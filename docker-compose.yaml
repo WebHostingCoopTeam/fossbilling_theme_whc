@@ -7,9 +7,9 @@ services:
       - 5080:80
     volumes:
       - fossbilling:/var/www/html
-      - ./scripts/theme-start.sh:/var/www/html/themes/start.sh
       - ./submodules/fb_whc:/var/www/html/themes/fb_whc
       - ./submodules/fb_whc_admin:/var/www/html/themes/fb_whc_admin
+      #- ./scripts/theme-start.sh:/var/www/html/themes/start.sh
   mysql:
     image: mysql:8.2
     restart: always
